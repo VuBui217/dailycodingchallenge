@@ -25,8 +25,6 @@ def compress_string(sentence):
             count = 1
 
     return " ".join(res)
-
-
 print(compress_string("yes yes yes please")                                         )     # should return "yes(3) please".
 print(compress_string("I have have have apples")                                    )     # should return "I have(3) apples".
 print(compress_string("one one three and to the the the the")                       )     # should return "one(2) three and to the(4)".
