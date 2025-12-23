@@ -37,7 +37,7 @@ def daylight_hours(latitude):
     l1, h1 = table[left]
     l2, h2 = table[right]
 
-    if abs(latitude - l1) < abs(latitude - h2):
+    if abs(latitude - l1) < abs(latitude - l2):
         return h1
     else:
         return h2
